@@ -1,4 +1,4 @@
-Django Calculator Project (Bijganit)
+Django Calculator Project 
 
 Run instructions (Linux/macOS):
 
