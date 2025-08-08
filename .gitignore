@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Django specific
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Environment variables
+.env
+*.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# pytest cache and reports
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Byte-compiled / optimized / DLL files
+*$py.class
+
+# MyPy
+.mypy_cache/
+
+# Cache
+.DS_Store
+
+# Backup files
+*~

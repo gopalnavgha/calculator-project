@@ -1,0 +1,49 @@
+{% extends 'calculator/base.html' %}
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      {{ form.operation.label_tag }}
+      {{ form.operation }}
+    </div>
+
+    <div>
+      <label>x:</label>
+      {{ form.x }}
+    </div>
+    <div>
+      <label>y:</label>
+      {{ form.y }}
+    </div>
+    <div>
+      <label>z:</label>
+      {{ form.z }}
+    </div>
+    <div>
+      <label>n (compound times per year):</label>
+      {{ form.n }}
+    </div>
+
+    <div>
+      <label>x1:</label>
+      {{ form.x1 }}
+      <label>y1:</label>
+      {{ form.y1 }}
+      <label>x2:</label>
+      {{ form.x2 }}
+      <label>y2:</label>
+      {{ form.y2 }}
+    </div>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  {% if error %}
+    <div style="color: red; margin-top: 12px">Error: {{ error }}</div>
+  {% endif %}
+
+  {% if result is not None %}
+    <div style="margin-top: 12px">Result: <strong>{{ result }}</strong></div>
+  {% endif %}
+
+{% endblock %}
